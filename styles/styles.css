@@ -31,6 +31,7 @@ main img {
   padding: 2px;
   box-shadow: 0 0 30px gray;
   float: right;
+  margin: 0 0 5 rem 5 rem;
 }
 
 p {
@@ -42,11 +43,16 @@ main {
 }
 
 aside {
-  position: relative;
   width: 20rem;
   text-align: var(--text-align);
+  position: relative;
 }
 
+aside h2 {
+  position: absolute;
+  top: 120px;
+  left: 140px;
+}
 aside img {
   width: 200px;
   height: auto;
