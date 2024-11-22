@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Fredoka:wght@300..700&family=Lacquer&family=Permanent+Marker&display=swap");
+
+:root {
+  text-align: center;
+  --Smoky-black: #121200;
+  --Payne’s-gray: #326273;
+  --Anti-flash-white: #eaeaeb;
+  --Ash-gray: #a4b6ac;
+  --border: 1px solid rgba(0, 0, 0, 0.2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Covered By Your Grace", Helvetica, sans-serif;
+  color: var(--Smoky-black);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+h1 {
+  font-family: Lacquer, Arial, Helvetica, sans-serif;
+  color: var(--Smoky-black);
+}
+p {
+  font-family: Fredoka, "Times New Roman", Times, serif;
+  color: var(--Smoky-black);
+}
+footer a {
+  text-decoration: none;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero h1 {
+  position: absolute;
+  font-size: xxx-large;
+  width: 100%;
+  height: fit-content;
+  top: 120px;
+  background-color: #eaeaebad;
+}
+
+.hero article {
+  position: absolute;
+  text-align: center;
+  background-color: #326273ec;
+  top: 400px;
+  border-radius: 8px;
+}
+
+.hero article img {
+  float: right;
+  height: auto;
+  width: 200px;
+  border: var(--border);
+}
+
+.box {
+  margin: 1rem;
+  border: var(--border);
+  padding: 1rem;
+  background-color: lightgray;
+  color: #000;
+}
