@@ -42,6 +42,11 @@ nav {
   border: #000;
   background-color:#a4b6ac;
   font-size: xx-large;
+  
+}
+
+header nav a {
+  color: var(--Smoky-black)
 }
 
 header h1 {
@@ -89,7 +94,7 @@ p {
 .hero article {
   position: absolute;
   text-align: center;
-  background-color: #326273ec;
+  background-color:var(--Ash-gray) ;
   top: 400px;
   border-radius: 8px;
 }
@@ -101,6 +106,9 @@ p {
   border: var(--border);
 }
 
+.hero p {
+  color:#121200;
+}
 .history-content {
   display: flex;
   text-align: center;
@@ -136,7 +144,9 @@ footer {
   padding: 30px;
   min-height: 20px;
   font-size: large;
+  
 }
+
 footer img {
   width: 60px;
   padding: 10px
