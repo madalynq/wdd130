@@ -31,69 +31,82 @@
       </nav>
     </header>
     <main>
-      <h2>Reach Our Team</h2>
-      <p>We love questions and feedback - and we're always happy to help!</p>
-      <p>Here are some ways to contact us.</p>
-      <section class="team">
-        <figure>
-            <img src="" alt="emp1">
-            <figcaption>EMPLOYEE1</figcaption>
-        </figure>
-        <figure>
-            <img src="" alt="emp2">
-            <figcaption>EMPLOYEE2</figcaption>
-        </figure>
-        <figure>
-            <img src="" alt="emp3">
-            <figcaption>EMPLOYEE3</figcaption>
-        </figure>
-      </section>
-
-
-
-
-      <p>address</p>
-      <p>(208) 888-8888</p>
-      <p>roaringrapids@gmail.com</p>
-      <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d16600.283647264187!2d-113.54469308189965!3d42.64984130548976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1733458977357!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    
-      <form>
-        <fieldset>
-            <legend>Contact Information</legend>
-            <div class="form-item column2">
-                <label for="fullname">Full Name:</label>
-                <input type="text" id="fullname" name="fullname">  
-                <!--labels can either be put in before "input", or around input:   (implicit method)  -->
+      <section class="box">
+        <div class="ROT">
+            <h2>Reach Our Team</h2>
+            <p>We love questions and feedback - and we're always happy to help!</p>
+            <p>Here are some ways to contact us.</p>
+        </div>
+      </section> 
+      <section class="box">
+        <div class="employees">
+            <figure>
+                <img src="" alt="emp1">
+                <figcaption>EMPLOYEE1</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="emp2">
+                <figcaption>EMPLOYEE2</figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="emp3">
+                <figcaption>EMPLOYEE3</figcaption>
+            </figure>
+        </div>
+        </section>
+        <section class="box">
+            <div class="headquarters">
+                <p>address</p>
+                <p>(208) 888-8888</p>
+                <p>roaringrapids@gmail.com</p>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d16600.283647264187!2d-113.54469308189965!3d42.64984130548976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1733458977357!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
-            <div class="form-item column2">
-                <label for="usermail">Email:</label>
-                <input type="email" id="usermail" name="usermail">    
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend>Have a Question?</legend>
-            <div class="form-item column1">
-                <label for="inquiry">Select One:</label>
-                <input type="radio" id="inquiry" name="inquiry">
-                    <option value="general">General Inquiry</option>
-                    <option value="reservation">Reservation Question</option>
-                    <option value="website">Website Question</option>
+        </section>
+        <section class="box">
+            <div class="contact-information">
+
+                
+                <form>
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <div class="form-item column2">
+                            <label for="fullname">Full Name:</label>
+                            <input type="text" id="fullname" name="fullname">  
+                            <!--labels can either be put in before "input", or around input:   (implicit method)  -->
+                        </div>
+                        <div class="form-item column2">
+                            <label for="usermail">Email:</label>
+                            <input type="email" id="usermail" name="usermail">    
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Have a Question?</legend>
+                        <div class="form-item column1">
+                            <p>Select One:</p>
+                            <input type="radio" id="general-inquiry" name="inquiry" value="General Inquiry">
+                            <label for="general">General Inquiry</label><br>
+                            <input type="radio" id="reservation-question" name="inquiry" value="Reservation Question">
+                            <label for="reservation">Reservation Question</label>
+                            <input type="radio" id="website-question" name="inquiry" value="Website Question">
+                            <label for="website">Website Question</label>
+                            <input type="radio" id="other" name="inquiry" value="Other">
+                            <label for="other">Other</label>
+                        </select>
+                    </div>
+                    <div class="form-item column1">
+                        <label for="subscribe">Please subscribe to the monthly newsletter</label>
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                    </div>
+                    <label for="feedback">List the places you have lived:</label>
+                    <textarea id="feedback" name="feedback" rows="4" placeholder="Stillwater Florida, Upland California, Rexburg Idaho"></textarea>
                     
-                    <option value="other">Other</option>
-                </select>
-            </div>
-            <div class="form-item column1">
-                <label for="subscribe">Please subscribe to the monthly newsletter</label>
-                <input type="checkbox" id="subscribe" name="subscribe">
-            </div>
-                <label for="feedback">List the places you have lived:</label>
-                <textarea id="feedback" name="feedback" rows="4" placeholder="Stillwater Florida, Upland California, Rexburg Idaho"></textarea>
-            
-        </fieldset>
-        <button type="submit">Submit Poll</button>
-    </form>
+                </fieldset>
+                <button type="submit">Submit Poll</button>
+            </form>
+        </div>
+    </section>
     </main>
     <footer>
       <p>&copy; 2024 | Roaring Rapids | Madalyn Querubin</p>
@@ -108,7 +121,7 @@
           <img src="images/tiktok.png" alt="TikTok" /> 
         </a>
         <a href="https://app.moqups.com/ncwDP88NEmoYosJHep0Zotvlm1JbUjo5/view/page/ad12de680" target="_blank">
-          <img src="images/wireframe.png" alt="Wireframe"
+          <img src="images/wireframe.png" alt="Wireframe" />
         </a>
       </nav>
     </footer>
