@@ -159,3 +159,24 @@ footer img {
   background-color: lightgray;
   color: #000;
 }
+
+.employees {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.employees img {
+  height: auto;
+  width: 300px;
+}
+
+.side-by-side {
+  display: flex;
+  justify-content: space-around;
+}
+
+.headquarters {
+  display: grid;
+  
+  
+}

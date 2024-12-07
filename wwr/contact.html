@@ -41,72 +41,73 @@
       <section class="box">
         <div class="employees">
             <figure>
-                <img src="" alt="emp1">
-                <figcaption>EMPLOYEE1</figcaption>
+                <img src="images/josh.jpg" alt="emp1">
+                <figcaption>Josh | Rafting Instructor</figcaption>
             </figure>
             <figure>
-                <img src="" alt="emp2">
-                <figcaption>EMPLOYEE2</figcaption>
+                <img src="images/kaylee.jpg" alt="emp2">
+                <figcaption>Kaylee | Events Coordinator</figcaption>
             </figure>
             <figure>
-                <img src="" alt="emp3">
-                <figcaption>EMPLOYEE3</figcaption>
+                <img src="images/robby.jpg" alt="emp3">
+                <figcaption>Robby | Rafting Team Lead </figcaption>
             </figure>
         </div>
         </section>
-        <section class="box">
+        <div class="side-by-side">
+          <section class="box">
             <div class="headquarters">
-                <p>address</p>
-                <p>(208) 888-8888</p>
-                <p>roaringrapids@gmail.com</p>
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d16600.283647264187!2d-113.54469308189965!3d42.64984130548976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1733458977357!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+              <h2>Headquarters</h2>
+              <p>address</p>
+              <p>(208) 888-8888</p>
+              <p>roaringrapids@gmail.com</p>
+              <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d16600.283647264187!2d-113.54469308189965!3d42.64984130548976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1733458977357!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
             </div>
-        </section>
-        <section class="box">
+          </section>
+          <section class="box">
             <div class="contact-information">
-
-                
-                <form>
-                    <fieldset>
-                        <legend>Contact Information</legend>
-                        <div class="form-item column2">
-                            <label for="fullname">Full Name:</label>
-                            <input type="text" id="fullname" name="fullname">  
-                            <!--labels can either be put in before "input", or around input:   (implicit method)  -->
-                        </div>
-                        <div class="form-item column2">
-                            <label for="usermail">Email:</label>
-                            <input type="email" id="usermail" name="usermail">    
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Have a Question?</legend>
-                        <div class="form-item column1">
-                            <p>Select One:</p>
-                            <input type="radio" id="general-inquiry" name="inquiry" value="General Inquiry">
-                            <label for="general">General Inquiry</label><br>
-                            <input type="radio" id="reservation-question" name="inquiry" value="Reservation Question">
-                            <label for="reservation">Reservation Question</label>
-                            <input type="radio" id="website-question" name="inquiry" value="Website Question">
-                            <label for="website">Website Question</label>
-                            <input type="radio" id="other" name="inquiry" value="Other">
-                            <label for="other">Other</label>
-                        </select>
-                    </div>
-                    <div class="form-item column1">
-                        <label for="subscribe">Please subscribe to the monthly newsletter</label>
-                        <input type="checkbox" id="subscribe" name="subscribe">
-                    </div>
-                    <label for="feedback">List the places you have lived:</label>
-                    <textarea id="feedback" name="feedback" rows="4" placeholder="Stillwater Florida, Upland California, Rexburg Idaho"></textarea>
-                    
+              <form>
+                <fieldset>
+                  <legend>Contact Information</legend>
+                  <div class="form-item column2">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname">  
+                    <!--labels can either be put in before "input", or around input:   (implicit method)  -->
+                  </div>
+                  <div class="form-item column2">
+                    <label for="usermail">Email:</label>
+                    <input type="email" id="usermail" name="usermail">    
+                  </div>
                 </fieldset>
-                <button type="submit">Submit Poll</button>
+                <fieldset>
+                  <legend>Have a Question?</legend>
+                  <div class="form-item column1">
+                    <p>Select One:</p>
+                    <input type="radio" id="general-inquiry" name="inquiry" value="General Inquiry">
+                    <label for="general">General Inquiry</label><br>
+                    <input type="radio" id="reservation-question" name="inquiry" value="Reservation Question">
+                    <label for="reservation">Reservation Question</label>
+                    <input type="radio" id="website-question" name="inquiry" value="Website Question">
+                    <label for="website">Website Question</label>
+                    <input type="radio" id="other" name="inquiry" value="Other">
+                    <label for="other">Other</label>
+                  </select>
+                </div>
+                <div class="form-item column1">
+                  <label for="subscribe">Please subscribe to the monthly newsletter</label>
+                  <input type="checkbox" id="subscribe" name="subscribe">
+                </div>
+                <label for="feedback">List the places you have lived:</label>
+                <textarea id="feedback" name="feedback" rows="4" placeholder="Stillwater Florida, Upland California, Rexburg Idaho"></textarea>
+                
+              </fieldset>
+              <button type="submit">Submit Poll</button>
             </form>
+          </div>
         </div>
-    </section>
+        </section>
     </main>
     <footer>
       <p>&copy; 2024 | Roaring Rapids | Madalyn Querubin</p>
