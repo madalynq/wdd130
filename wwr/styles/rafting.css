@@ -176,7 +176,62 @@ footer img {
 }
 
 .headquarters {
+  display: flex;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+button {
+  font-family: "Covered By Your Grace", Arial, Helvetica, sans-serif;
+  border: 1rem black;
+  border-radius: 1rem;
+  font-size: large;
+  background-color:#a4b6ac;
+  margin: auto;
+  padding: 10px
+}
+
+button:hover {
+    background-color:#326273;
+}
+
+.form-item {
   display: grid;
-  
-  
+  align-items: center;
+}
+
+.column1 {
+  grid-template-columns: 1fr 5fr;
+  margin: 0rem 0;
+}
+
+.column2 {
+  grid-template-columns: 1fr 2fr;
+}
+
+label[for="feedback"] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+} 
+
+.form-item.column1 {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start;  */
+}
+
+input[type="radio"] {
+  margin-right: 0.5rem; /* Add spacing between radio and label */
+}
+
+.form-item.column1 label {
+  display: inline-block; /* Ensure labels align properly with inputs */
+  margin-bottom: 0.5rem; /* Add spacing between each input-label pair */
 }
