@@ -3,9 +3,10 @@
 :root {
   text-align: center;
   --Smoky-black: #121200;
-  --Payne’s-gray: #326273;
-  --Anti-flash-white: #eaeaeb;
-  --Ash-gray: #a4b6ac;
+  --Light-Cyan: #D1F2F8;
+  --Caribbean-current: #08605F;
+  --Cambridge-blue: #8cbbb9;
+  --Nyanza: #c9efdc;
   --border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -40,7 +41,7 @@ nav {
   justify-content: space-around;
   margin: 150px 50px 150px 10px;
   border: #000;
-  background-color:#a4b6ac;
+  background-color: var(--Nyanza);
   font-size: xx-large;
   
 }
@@ -50,10 +51,10 @@ header nav a {
 }
 
 header h1 {
-  font-family: Lacquer, Arial, Helvetica, sans-serif;
+  font-family: "Lacquer", Arial, Helvetica, sans-serif;
   color: var(--Smoky-black);
   font-size: xx-large;
-  background-color: rgb(209, 242, 248);
+  background-color: var(--Light-Cyan);
   margin-bottom: 10px;
   text-align: center;
   position: static;
@@ -68,7 +69,7 @@ body {
 }
 
 p {
-  font-family: Fredoka, "Times New Roman", Times, serif;
+  font-family: "Fredoka", "Times New Roman", Times, serif;
   color: var(--Smoky-black);
 }
 
@@ -94,7 +95,7 @@ p {
 .hero article {
   position: absolute;
   text-align: center;
-  background-color:var(--Ash-gray) ;
+  background-color: var(--Nyanza) ;
   top: 400px;
   border-radius: 8px;
 }
@@ -125,7 +126,6 @@ p {
 .adventure-gallery {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-
 }
 
 .adventure-gallery img {
@@ -135,7 +135,7 @@ p {
 
 footer {
   text-decoration: none;
-  background-color: #a4b6ac;
+  background-color:var(--Caribbean-current);
   display: grid;
   grid-template-columns: 20fr 1fr;
   grid-template-rows: 20px;
@@ -143,8 +143,7 @@ footer {
   margin-top: 20px;
   padding: 30px;
   min-height: 20px;
-  font-size: large;
-  
+  font-size: large; 
 }
 
 footer img {
@@ -152,17 +151,34 @@ footer img {
   padding: 10px
 }
 
+footer p {
+  color: white;
+}
+
+footer nav {
+  background-color:var(--Caribbean-current);
+}
 .box {
   margin-top: 1rem;
   border: var(--border);
   padding: 1rem;
-  background-color: lightgray;
+  background-color: var(--Cambridge-blue);
   color: #000;
 }
 
 .employees {
   display:grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+.box-emp {
+  margin-top: 1rem;
+  border: var(--border);
+  padding: 1rem;
+  background-color: var(--Caribbean-current);
+  color: white;
+  font-size: large;
+  font-family: "Fredoka", "Times New Roman", Times, serif;
 }
 
 .employees img {
@@ -172,18 +188,61 @@ footer img {
 
 .side-by-side {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  
+}
+
+.box-1 {
+  display:flex;
+  
+  margin-top: 1rem;
+  border: var(--border);
+  padding: 1rem;
+  background-color: var(--Cambridge-blue);
+  color: #000;
+  margin-right: 1rem;
+}
+
+.box-2 {
+  margin-top: 1rem;
+  border: var(--border);
+  padding: 1rem;
+  background-color: var(--Cambridge-blue);
+  color: #000;
+  margin-left: 1rem;
+  
 }
 
 .headquarters {
   display: flex;
-  grid-template-columns: 50% 50%;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+  
+.hq-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: center;
+}
+
+.hq-info h2 {
+  font-size: xx-large;
+}
+
+.hq-info h3 {
+  font-family: "Fredoka", "Times New Roman", Times, serif;
+  padding: 10px;
+}
+
+.map {
+  margin-left: 40px;
+  margin-top: 40px;
 }
 
 label {
-  text-align: right;
+  text-align: center;
   padding-right: 1rem;
 }
 
@@ -192,23 +251,33 @@ button {
   border: 1rem black;
   border-radius: 1rem;
   font-size: large;
-  background-color:#a4b6ac;
-  margin: auto;
-  padding: 10px
+  background-color: var(--Caribbean-current);
+  margin: 10px;
+  padding: 10px;
+  color: white;
 }
 
 button:hover {
-    background-color:#326273;
+  background-color: var(--Nyanza);
+  color:#000;
+}
+
+legend {
+  font-size: larger;
+}
+
+fieldset {
+margin: 20px;
+}
+
+fieldset p {
+  font-size: larger;
 }
 
 .form-item {
   display: grid;
-  align-items: center;
-}
-
-.column1 {
-  grid-template-columns: 1fr 5fr;
-  margin: 0rem 0;
+  grid-template-columns: 1fr 1fr;
+  font-family:Fredoka, "Times New Roman", Times, serif;
 }
 
 .column2 {
@@ -219,19 +288,21 @@ label[for="feedback"] {
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
+  font-size: larger;
 } 
 
-.form-item.column1 {
+input[type="radio"] {
+  margin-right: 0.5rem; 
+}
+
+input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+  margin-left: 8.5rem;
+}
+
+.enter-text {
   display: flex;
   flex-direction: column;
-  /* align-items: flex-start;  */
-}
-
-input[type="radio"] {
-  margin-right: 0.5rem; /* Add spacing between radio and label */
-}
-
-.form-item.column1 label {
-  display: inline-block; /* Ensure labels align properly with inputs */
-  margin-bottom: 0.5rem; /* Add spacing between each input-label pair */
+  padding: 15px
 }
