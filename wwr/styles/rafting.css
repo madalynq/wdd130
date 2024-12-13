@@ -74,7 +74,7 @@ p {
 }
 
 .hero img {
-  display: block;
+  /* display: block; */
   width: 100%;
   height: auto;
 }
@@ -108,8 +108,23 @@ p {
   border: var(--border);
 }
 
+.hero-box {
+  margin-top: 1rem auto;
+  padding: 1.5rem;
+  border: var(--border);
+  background-color: var(--Cambridge-blue);
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  color: #000;
+  align-content: center;
+  justify-content: center;
+  margin-left:40rem;
+}
+
 .hero p {
   color:#121200;
+  padding: 5px ;
 }
 .history-content {
   display: flex;
@@ -206,13 +221,11 @@ footer nav {
 
 .box-2 {
   margin-top: 1rem;
-  
   border: var(--border);
   padding: 1rem;
   background-color: var(--Cambridge-blue);
   color: #000;
   margin-left: 1rem;
-  
 }
 
 .headquarters {
@@ -321,24 +334,7 @@ input[type="checkbox"] {
   height: auto;
 }
 
-/* .box-3 {
-  border: var(--border);
-  padding: 1rem;
-  background-color: var(--Cambridge-blue);
-  color: #000;
-  width: 500px;
-  height: 125px;
-  margin-left: 35rem;
-} */
-
-.hero article a {
-  position:absolute;
-  
-  
-}
-
-.hero-button {
- 
+.hero a {
   font-family: "Covered By Your Grace", Arial, Helvetica, sans-serif;
   border: 1rem black;
   border-radius: 1rem;
@@ -350,7 +346,7 @@ input[type="checkbox"] {
   text-decoration: none;
 }
 
-.hero-button:hover {
+.hero a:hover {
   background-color: var(--Cambridge-blue);
   color:#000; 
 }
@@ -394,4 +390,61 @@ input[type="checkbox"] {
 .trips-info img {
   max-width: 300px;
   height: auto;
+}
+
+table {
+  width: 100%;
+  border: 5px solid var(--Smoky-black);
+  margin: 10px 0px;
+  font-size: larger;
+  border-radius: 15px;
+  border-spacing: 0;
+  border-collapse: separate;
+  color: var(--Smoky-black);
+  
+}
+
+th, td {
+  padding: 10px;
+  border: 2px solid var(--Smoky-black);
+  
+}
+
+thead th {
+  background-color: var(--Nyanza);
+  
+}
+
+.question-box {
+  margin-top: 1rem;
+  border: var(--border);
+  padding: 1rem;
+  background-color: var(--Nyanza);
+  color: #000;
+}
+
+.question-box p {
+  padding: 10px 0px 30px;
+}
+
+.question-box h2 {
+  font-size: xx-large;
+}
+
+.question-box a {
+  position:relative;
+  font-family: "Covered By Your Grace", Arial, Helvetica, sans-serif;
+  border: 1rem black;
+  border-radius: 1rem;
+  font-size: large;
+  background-color: var(--Caribbean-current);
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.question-box a:hover {
+  background-color: var(--Cambridge-blue);
+  color:#000; 
 }
