@@ -27,7 +27,7 @@ header {
   border: 5px solid #000;
   display: inline-block;
   padding: 10px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .logo-box img {
@@ -98,6 +98,7 @@ p {
   background-color: var(--Nyanza) ;
   top: 400px;
   border-radius: 8px;
+  
 }
 
 .hero article img {
@@ -205,6 +206,7 @@ footer nav {
 
 .box-2 {
   margin-top: 1rem;
+  
   border: var(--border);
   padding: 1rem;
   background-color: var(--Cambridge-blue);
@@ -259,7 +261,7 @@ button {
 
 button:hover {
   background-color: var(--Nyanza);
-  color:#000;
+  color:#000; 
 }
 
 legend {
@@ -305,4 +307,79 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: column;
   padding: 15px
+}
+
+.home-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.home-info img {
+  max-width: 300px;
+  height: auto;
+}
+
+/* .box-3 {
+  border: var(--border);
+  padding: 1rem;
+  background-color: var(--Cambridge-blue);
+  color: #000;
+  width: 500px;
+  height: 125px;
+  margin-left: 35rem;
+} */
+
+.hero article a {
+  position:absolute;
+  
+  
+}
+
+.hero-button {
+ 
+  font-family: "Covered By Your Grace", Arial, Helvetica, sans-serif;
+  border: 1rem black;
+  border-radius: 1rem;
+  font-size: large;
+  background-color: var(--Caribbean-current);
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.hero-button:hover {
+  background-color: var(--Cambridge-blue);
+  color:#000; 
+}
+
+.info-1 {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  border: var(--border);
+  padding: 1rem;
+  background-color: var(--Cambridge-blue);
+  color: #000;
+
+}
+
+.info-2 {
+  margin-top: 1rem;
+  border: var(--border);
+  padding: 1rem;
+  background-color: var(--Cambridge-blue);
+  color: #000;
+
+}
+
+.info-3 {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  border: var(--border);
+  padding: 1rem;
+  background-color: var(--Cambridge-blue);
+  color: #000;
+
 }
