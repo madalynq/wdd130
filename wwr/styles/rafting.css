@@ -383,3 +383,15 @@ input[type="checkbox"] {
   color: #000;
 
 }
+
+.trips-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.trips-info img {
+  max-width: 300px;
+  height: auto;
+}
