@@ -109,7 +109,6 @@ p {
 }
 
 .hero-box {
-  margin-top: 1rem auto;
   padding: 1.5rem;
   border: var(--border);
   background-color: var(--Cambridge-blue);
